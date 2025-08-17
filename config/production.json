@@ -1,0 +1,19 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 3000
+  },
+  "database": {
+    "client": "pg",
+    "connection": {
+      "host": "${env:PGHOST}",
+      "port": "${env:PGPORT}",
+      "database": "${env:PGDATABASE}",
+      "user": "${env:PGUSER}",
+      "password": "${env:PGPASSWORD}"
+    }
+  },
+  "store": {
+    "url": "https://yykb-evershop-app-backend-production.up.railway.app"
+  }
+}
